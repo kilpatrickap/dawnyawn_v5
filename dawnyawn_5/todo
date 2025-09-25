@@ -4,4 +4,14 @@ python main.py "Perform a brief ping on www.google.com."
 
 python main.py "In one step, Find out vulnerabilities on www.pentest-ground.com using nikto."
 
-python main.py "Perform a security audit on www.ec.gov.gh. Your task as a Security Consultant is to conduct a professional security assessment. Start by gathering information to understand the system. Then, identify potential vulnerabilities."
+python main.py "Perform a security audit on www.pentest-ground.com. Your task as a Security Consultant is to conduct a professional security assessment. Start by gathering information to understand the system. Then, identify and exploit potential vulnerabilities using metasploit."
+
+python main.py "Your task as a Security Consultant is to conduct a professional security assessment on www.pentest-ground.com in 5 Steps. Then, identify and exploit ONE potential vulnerability using metasploit."
+
+1. Conduct an initial network scan to gather information about the website's infrastructure and identify potential entry points.
+2. Perform a web application scanning to identify vulnerable services, outdated software, and misconfigured settings on www.pentest-ground.com.
+3. Analyze the identified vulnerabilities and determine which ones can be exploited using metasploit.
+4. Configure metasploit to target the identified vulnerabilities and prepare for exploitation attempts.
+5. Execute exploitation attempts using metasploit to verify the existence of potential entry points and gather internal information on www.pentest-ground.com.
+
+

@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
     # Web Pentesting
     gobuster \
     nikto \
-    caido-cli \
     # Exploitation
     sqlmap \
     hydra \

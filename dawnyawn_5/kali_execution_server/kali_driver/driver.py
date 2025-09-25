@@ -128,7 +128,9 @@ class KaliContainer:
 class KaliManager:
     def __init__(self):
         try:
-            self._docker_client = docker.from_env()
+            # --- THE FIX: Add a longer timeout for all Docker operations ---
+            # We'll set a generous 180-second (3-minute) timeout.
+            self._docker_client = docker.from_env(timeout=180)
             self._docker_client.ping()
         except Exception as e:
             print("FATAL ERROR: Could not connect to Docker. Is it running?")

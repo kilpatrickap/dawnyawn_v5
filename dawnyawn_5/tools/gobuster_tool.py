@@ -17,5 +17,5 @@ class GobusterTool(BaseTool):
     def _construct_command(self, tool_input: str) -> str:
         # --- THE FIX: Reference the wordlist copied into our app directory ---
         # This path is now reliable and controlled by our project.
-        wordlist = "/app/wordlists/bug-bounty-program-subdomains-trickest-inventory.txt"
+        wordlist = "/app/wordlists/common.txt"
         return f"gobuster dir -u {tool_input} -w {wordlist} -t 50 --no-error"
