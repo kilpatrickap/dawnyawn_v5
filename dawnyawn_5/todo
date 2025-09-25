@@ -5,7 +5,3 @@ python main.py "Perform a brief ping on www.google.com."
 python main.py "In one step, Find out vulnerabilities on www.pentest-ground.com using nikto."
 
 python main.py "Perform a security audit on www.ec.gov.gh. Your task as a Security Consultant is to conduct a professional security assessment. Start by gathering information to understand the system. Then, identify potential vulnerabilities."
-
-
-
-curl -o wordlists/common.txt https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/common.txt

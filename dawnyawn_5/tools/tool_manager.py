@@ -15,6 +15,10 @@ from tools.nikto_tool import NiktoTool
 from tools.sqlmap_tool import SqlmapTool
 from tools.hydra_tool import HydraTool
 from tools.subdomain_tool import SubdomainTool
+# --- Add the new imports ---
+from tools.caido_tool import CaidoTool
+from tools.john_tool import JohnTheRipperTool
+from tools.metasploit_tool import MetasploitTool
 
 
 class ToolManager:
@@ -34,6 +38,10 @@ class ToolManager:
         self._register_tool(SqlmapTool())
         self._register_tool(HydraTool())
         self._register_tool(SubdomainTool())
+        # --- Register the new tools ---
+        self._register_tool(CaidoTool())
+        self._register_tool(JohnTheRipperTool())
+        self._register_tool(MetasploitTool())
 
         self.finish_mission_tool_name = "finish_mission"
         logging.info("ToolManager initialized with %d tools.", len(self.tools))

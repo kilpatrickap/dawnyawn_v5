@@ -16,5 +16,5 @@ class SubdomainTool(BaseTool):
 
     def _construct_command(self, tool_input: str) -> str:
         # Use the same wordlist we use for directory scanning for this example.
-        wordlist = "/app/wordlists/common.txt"
+        wordlist = "/app/wordlists/bug-bounty-program-subdomains-trickest-inventory.txt"
         return f"gobuster dns -d {tool_input} -w {wordlist} -t 50"

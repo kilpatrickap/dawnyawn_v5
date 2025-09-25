@@ -19,7 +19,7 @@ class HydraTool(BaseTool):
     def _construct_command(self, tool_input: str) -> str:
         try:
             service, hostname, username = tool_input.strip().split(',')
-            password_list = "/app/wordlists/common.txt" # Using our self-contained wordlist
+            password_list = "/app/wordlists/xato-net-10-million-passwords-1000000.txt" # Using our self-contained wordlist
 
             if service.strip() not in ['ftp', 'ssh', 'http-post-form']:
                 return f"echo 'Error: Unsupported service \"{service}\". Use ftp, ssh, or http-post-form.'"
